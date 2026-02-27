@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="move-area">
+    <div class="outer">
+        <div class="inner">
+            <div class="hair"></div>
+                <div class="hair-puff1"></div>
+                <div class="hair-puff2"></div>
+                <div class="ear"></div>
+                <div class="ear1"></div>
+                <div class="eyebrow"></div>
+                <div class="eyebrow"></div>
+                <div class="face">
+                    <div class="eye-box">
+                        <div class="eye"></div>
+                        <div class="eye"></div>
+                    </div>
+                    <div class="nose"></div>
+                    <div class="mouth"></div>
+                </div>
+        </div>
+    </div>
+   </div> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script >
+    $(".move-area").mousemove(function(event){
+var eye=$(".eye");
+var x=(eye.offset().left)+(eye.width()/2);
+var y=(eye.offset().top)+(eye.height()/2);
+var rad=Math.atan2(event.pageX-x,event.pageY-y);
+var rot=(rad * (180/Math.PI)*-1)+180;
+eye.css({
+    'transform':'rotate(' + rot + 'deg)'
+});
+    });
+</script>
+</body>
+</html>
