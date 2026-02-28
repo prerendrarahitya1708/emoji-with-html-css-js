@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+body{
+    background: #55122b;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: absolute;
+}
+.outer{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    height: 150px;
+width: 200px;
+}
+.face{
+    background: #ffb7b9;
+    width: 150px;
+    height: 150px;
+    border-radius: 61% 61% 76% 76%;
+}
