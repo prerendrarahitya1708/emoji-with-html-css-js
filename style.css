@@ -25,3 +25,41 @@ width: 200px;
     height: 150px;
     border-radius: 61% 61% 76% 76%;
 }
+.ear{
+    background: linear-gradient(90deg,#ffb7b9,#ffb7b9);
+    height: 42px;
+    width: 24px;
+    position: absolute;
+    top: 30%;
+    left: -6%;
+    border-radius: 100% 54% 71% 207%; 
+}
+.ear::after{
+content: '';
+position: absolute;
+width: 5px;
+height: 15px;
+background: #c7716c;
+border-radius: 34% 79% 50% 46%;
+left: 38%;
+top: 29%;
+}
+.ear1{
+    background: linear-gradient(-90deg,#ffb7b9,#ffb7b9);
+    height: 42px;
+    width: 24px;
+    position: absolute;
+    top: 30%;
+    right: 19%;
+    border-radius: 54% 100% 207% 71%; 
+}
+.ear1::after{
+content: '';
+position: absolute;
+width: 5px;
+height: 15px;
+background: #c7716c;
+border-radius: 79% 34% 46% 50%;
+right: 38%;
+top: 29%;
+}
