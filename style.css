@@ -63,3 +63,38 @@ border-radius: 79% 34% 46% 50%;
 right: 38%;
 top: 29%;
 }
+.hair{
+    position: absolute;
+    top: -7%;
+    left: -4%;
+    width: 165px;
+    height: 155px;
+    background-color: #f05201;
+    border-radius: 50px;
+    z-index: -1;
+}
+.hair-puff1{
+    position: absolute;
+width: 45px;
+height: 45px;
+z-index: 5;
+background: #f05201;
+border-radius: 50%;
+    top: -4%;
+    left: 16%;
+}
+.hair-puff2{
+    position: absolute;
+width: 40px;
+height: 40px;
+z-index: 5;
+background: #f05201;
+border-radius: 50%;
+ top: -7%;
+ left: 32%;
+}
+.move-area{
+    width: 100vw;
+    height: 100vh;
+    padding: 10% 45%;
+}
