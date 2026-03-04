@@ -122,3 +122,19 @@ border-radius: 50%;
     border-radius: 50%;
     content: "";
 }
+.eyebrow {
+    position: absolute;
+    width: 22%;
+    height: 20%;
+    border-top: 6px solid #ff6a00;  
+    border-radius: 100px 100px 0 0;  
+    top: 22%;                      
+    left: 8%;
+    transform: rotate(-10deg);
+}
+
+.eyebrow + .eyebrow {
+    left: auto;
+    right: 33%;
+    transform: rotate(10deg);
+}
